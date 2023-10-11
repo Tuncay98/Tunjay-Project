@@ -1,0 +1,989 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+  margin: 15px;
+  font-size: 32px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul a:hover{
+  color: #B8926A;
+  border-bottom: 1px solid #B8926A;
+}
+body{
+    background-color: #EAE6DF;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.info button{
+    background-color: none;
+    border: 1px solid #B8926A;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.logo p{
+    font-size: 30px;
+}
+.usersInfo i{
+ padding-left: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+   
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul a.active{
+border-bottom: 3px solid #B8926A;
+color: #B8926A;
+}
+/* Dil ucun yazilan */
+.headTextSmall{
+    display: none;
+}
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #B8926A;}
+
+  /* Dil ucun yazilan son */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+    
+}
+
+.shopButton{
+    width: 550px;
+}
+.mainPhotoImg{
+    width: 1000px;
+    height: 700px;
+}
+
+.headText{
+    position: absolute;
+    margin-top: -300px;
+    font-size: 70px;
+}
+.shopButton p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.shopButton button{
+    width: 250px;
+    height: 45px;
+    background-color: #B8926A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.shopButton button:hover{
+    background-color: transparent;
+    border:1px solid #B8926A;
+    color: #B8926A;
+}
+
+/* Scroll olunan yer */
+.main {
+	/* Scroll Container Styles */
+	.scroll {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		padding: 1rem 0;
+		margin: 2.5rem 0;
+		cursor: default;
+		overflow: scroll hidden;
+		scroll-snap-type: x mandatory;
+		scroll-padding: 0px 1.25rem;
+		scrollbar-width: none;
+	}
+
+	.scroll::-webkit-scrollbar {
+		display: none;
+	}
+
+	.scroll.active {
+		cursor: grab;
+		cursor: -webkit-grab;
+	}
+
+	/* Card Styles */
+	.card {
+  
+		width: 24rem;
+		height: 150px;
+		flex: 0 0 auto;
+		margin: 0 0.75rem;
+		border: none;
+		outline: none;
+		border-radius: 0.25rem;
+		color: #252a32;
+		background: #252a32;
+		box-shadow:  0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);;
+    cursor: pointer;
+	}
+
+	/* Card Image Styles */
+	.card-image {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: auto;
+		padding-top: 110%;
+	}
+
+	.card-image img.responsive {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	/* Card Inner Styles */
+	.card-inner {
+		width: 100%;
+		height: auto;
+		padding: 1rem;
+	}
+}
+
+.aboutHis{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.aboutText{
+    padding: 30px;
+    line-height: 2;
+}
+
+.aboutTextbutton{
+    background-color: transparent;
+    margin-top: 15px;
+    width: 300px;
+    height: 45px;
+    font-size: 24px;
+    border: 1px solid #B8926A;
+    color: #B8926A;
+    border-radius: 5px;
+}
+.aboutTextbutton:hover{
+    background-color: #B8926A;
+    color: white;
+    cursor: pointer;
+}
+.discount{
+    height: 300px;
+    margin-top: 155px;
+   background-image: url("img/discount.jpg");
+   background-size: cover;
+    width: 100%;
+  
+}
+.dicountInfo{
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+}
+.dicountInfo h1{
+    color: white;
+    font-size: 45px;
+    padding-top:15px;
+    padding-bottom: 15px;
+
+}
+
+.dicountInfo p{
+    color: white;
+    padding-top:15px;
+    padding-bottom: 15px;
+    line-height: 1.6;
+}
+
+.dicountInfo button{
+    background-color: #B8926A;
+    color: white;
+    width: 250px;
+    height: 40px;
+    border:none;
+    border-radius: 5px;
+}
+.dicountInfo button:hover{
+    background-color: white;
+    color: #B8926A;
+    border: 1px solid #B8926A;
+    cursor: pointer;
+}
+
+/* card */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.card-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.card h1{
+  font-size: 17px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.card h1 a{
+color: black;
+  text-decoration: none;
+}
+
+.card p{
+  font-size: 17px;
+  font-weight: 700;
+  text-align: left;
+  color: #B8926A;
+}
+
+
+
+
+/* Collection */
+.collection-card {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+
+.blur-text {
+  font-size: 18px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 5px;
+  margin-top: 10px;
+}
+/* Collection son */
+
+
+
+
+
+  @media screen and (max-width: 576px) {
+   
+  }
+  
+
+  .popular h1{
+    margin-bottom: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* axtaris ucun */
+  .search-form {
+      right: 200px;
+      top: 200px;
+  }
+  
+   .search-field {
+      background-color: transparent;
+      background-image: url(https://wp-themes.com/wp-content/themes/twentythirteen/images/search-icon.png);
+      background-position: 5px  center;
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      border: none;
+      cursor: pointer;
+      height: 40px;
+      margin: 3px 0;
+      padding: 0 0 0 34px;
+      position: relative;
+      -webkit-transition: width 400ms ease, background 400ms ease;
+      transition:         width 400ms ease, background 400ms ease;
+      width:0px;
+     cursor: pointer;
+  }
+  
+  .search-field:focus {
+      background-color: #000;
+      border: 2px solid #c3c0ab;
+      cursor: text;
+      outline: 0;
+      width: 250px;
+    color:#fff;
+  }
+  .search-form
+  .search-submit { 
+  display:none;
+  }
+  
+.search{
+    display: inline-block;
+}
+  /* axtaris ucun son */
+
+  /* COntact */
+.contact{
+   padding-left: 100px;
+}
+.contact h1{
+    margin-bottom: 25px;
+}
+  .ContactElements{
+    display: flex;
+  }
+  .contactForm{
+    width: 600px;
+  }
+
+  .input{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #B8926A;
+    width: 400px;
+    height: 30px;
+    margin-bottom: 25px;
+  }
+  .input::placeholder{
+text-indent: 10px;  
+}
+
+
+.textarea{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #B8926A;
+    width: 400px;
+    height: 150px;
+    margin-bottom: 25px;
+    resize: none;
+}
+
+.control .button{
+    background-color: #B8926A;
+    color: white;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* footer */
+
+
+footer{
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    gap:60px;
+    align-items: baseline;
+}
+.footerContactInfo{
+    width: 500px;
+}
+.logoFooter h1{
+    margin-bottom: 15px;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px or smaller */
+  
+    body {
+      margin-left: 0;
+      padding: 5px;
+      overflow-x: hidden;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .menu{
+        display: none;
+    }
+    .headText{
+        display: none;
+    }
+    .headTextSmall{
+        display: block;
+        font-weight: 900;
+        font-size: 32px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;  
+    }
+    .usersInfo{
+        display: none;
+    }
+    .shopButton button{
+        margin-bottom: 25px;
+    }
+   
+    /* Adjust styles for the header, menu, container, main section, about, discount, products, popular, collections, and contact sections as needed */
+  
+    .mainPhotoImg {
+      width: 100%;
+      height: auto;
+    }
+  
+   .aboutHis{
+    display: flex;
+    flex-direction: column;
+
+}
+.aboutHis img{
+width: 450px;
+height: 300px;
+}
+  
+    .shopButton {
+      width: 90%;
+    }
+   
+  /* Hide all product cards except the first one */
+.products .product-card {
+    display: none;
+  }
+  
+  /* Show the first product card */
+  .products .product-card:first-child {
+    display: block;
+  }
+
+  .ContactElements{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact{
+    padding-left: 20px;
+ }
+ .contactImage img{
+    margin-top: 30px;
+    width: 450px;
+    height: 300px;
+
+ }
+ footer{
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 50px;
+ }
+    /* Add more responsive styles for other elements as needed */
+  }
+
+
+
+  /* Styles for product cards */
+/* General styles for sections */
+.section {
+    margin: 20px;
+}
+
+/* Styles for product cards */
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    width: calc(25% - 20px); /* 4 cards per row */
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); /* 1 card per row on smaller screens */
+    }
+
+    /* Enable horizontal scrolling for the grids */
+    #product-grid,
+    #popular-grid,
+    #collections-grid {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    /* Remove horizontal scrollbar and adjust padding */
+    #product-grid::-webkit-scrollbar,
+    #popular-grid::-webkit-scrollbar,
+    #collections-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .grid-container {
+        padding: 10px 0;
+    }
+}
+
+
+.product-card {
+  width: 200px; /* Adjust the width as needed */
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.code {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.product-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #777;
+  margin: 5px 0;
+}
+
+
+/*! Collections */
+.collectionsHead{
+  margin-left: -5px;
+}
+.infoCollections{
+  width: 600px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+.infoCollectionsProductsFilter{
+  width: 600px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.collectionsHeadInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.collectionsHeadInfo button{
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  margin-right: 85px;
+  border-radius: 5px;
+  border: 1px solid #B8926A;
+  color: #B8926A;
+  font-size: 17px;
+}
+
+.CollectionFilter{
+  display: flex;
+  flex-direction: row;
+}
+.FilterRooms{
+  width: 400px;
+}
+.FilterRooms h1{
+ font-size: 20px;
+}
+.FilterRooms  input{
+  margin-right: 17px;
+  color: #B8926A;
+  width: 15px;
+  height: 15px;
+}
+
+.ChooseRooms{
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+#thank-you {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #00cc66;
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+/* Contact */
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+
+}
+.modal-contentMessage{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#myBtn{
+  background-color: #B8926A;
+  color: white;
+  padding: 3px;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 200px;
+  height: 35px;
+  border: none;
+  margin-top: 25px;
+}
+.modal-contentMessage button{
+  background-color: #B8926A;
+  color: white;
+  padding: 3px;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 200px;
+  height: 35px;
+  border: none;
+  margin-top: 25px;
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* About */
+
+.AboutElements{
+  display: flex;
+
+}
+
+.about h1{
+  margin-top: 25px;
+}
+
+.aboutPageInfo{
+  margin-left: 25px;
+  width: 800px;
+  line-height: 1.6;
+}
+
+.aboutStatistics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:200px;
+  margin-top: 40px;
+}
+
+.projectsAbout p{
+  font-size: 40px;
+  color: #B8926A;
+  font-weight: 700;
+}
+
+.iconHeart {
+ position: absolute;
+ margin-left: 250px;
+ margin-top: 5px;
+ font-size: 24px;
+}
+
+
+
+/* Basic styling for room cards and room names */
+.room-card {
+  width: 300px;
+  height: 200px;
+  background-color: #e0e0e0;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.room-names-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.room-name {
+  margin-bottom: 25px;
+}
+
+/* Styling for the carousel container */
+/* Basic styling for room cards and room names */
+.room-card {
+  width: 300px;
+  height: 200px;
+  background-color: #e0e0e0;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.room-names-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.room-name {
+  margin-bottom: 25px;
+}
+
+/* Styling for the carousel container */
+/* Basic styling for room cards and room names */
+.room-card {
+  width: 300px;
+  height: 200px;
+  background-color: #e0e0e0;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.room-names-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.room-name {
+  margin-bottom: 25px;
+}
+
+/* Styling for the carousel container */
+.carousel-container {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation for sliding cards */
+.carousel-container .room-card {
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+/* Styling for hiding overflow */
+.carousel-container > * {
+  overflow: hidden;
+}
+
+
+/* Account code */
+
+.accountContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  margin-bottom: 150px;
+}
+
+.accountCardInfo{
+  margin-left: 20px;
+  background-color: #aaaaaa;
+  padding: 50px;
+  border-radius: 5px;
+}
+.accountCardInfo h1{
+  margin-bottom: 25px;
+}
+.info{
+  display: flex;
+  margin-bottom: 25px;
+  gap: 25px;
+}
+
+.info p{
+  font-size: 20px;
+}
+
+.accountFormInfo{
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.accountFormInfo input{
+  width: 300px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid  #B8926A;
+  margin-bottom: 25px;
+}
+
+.accountFormInfo button{
+  width: 300px;
+  height: 40px;
+  background-color: #B8926A;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.accountFormInfo button:hover{
+cursor: pointer;
+background-color: transparent;
+border: 1px solid  #B8926A;
+color: #B8926A;
+}
